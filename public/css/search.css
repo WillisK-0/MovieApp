@@ -249,11 +249,10 @@ table {
 }
 
 /*
- * Global Styles
- */
+  * Global Styles
+  */
 body {
   background-color: #131a20;
-  background-image: url(dummy/background.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   color: #000000;
@@ -323,15 +322,24 @@ form textarea {
 }
 
 /*
- * Reusable Components Style
- */
+  * Reusable Components Style
+  */
 
-#today-pick {
-  text-align: center;
-  border-bottom: 3px solid #ebebeb;
+#searchFoot {
+  margin-top: 210px;
+  width: 100%;
+  height: auto;
+  background-color: #121b21;
 }
 
-.col-md-4 {
+#theaterBanner {
+  width: 100%;
+}
+#resultDiv {
+  display: none;
+}
+
+#today-pick {
   text-align: center;
 }
 .imgBot {
@@ -718,12 +726,10 @@ ul.arrow li a:hover {
 
 .container {
   background-color: #0006;
-  padding: 32px 16px 16px 15px;
-
+  padding: 32px 16px 16px 15;
   border-radius: 5px;
   margin-right: auto;
   margin-left: auto;
-
   *zoom: 1;
 }
 .container:after {
@@ -733,6 +739,24 @@ ul.arrow li a:hover {
   overflow: hidden;
   height: 0;
 }
+
+@media (max-width: 600px) {
+  .movie-search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main-content .container {
+    background: white;
+    border-radius: 5px;
+    padding: 76px 80px 121px 80px;
+  }
+
+  #searchButton {
+    margin-top: 15px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -1954,8 +1978,8 @@ ul.arrow li a:hover {
   }
 }
 /*
- * Header Styles
- */
+  * Header Styles
+  */
 .site-header {
   padding: 50px 0;
   *zoom: 1;
@@ -1986,7 +2010,7 @@ ul.arrow li a:hover {
   margin-right: 10px;
 }
 #branding .site-title {
-  margin: 3px 3px 3px 0px;
+  margin: 0px;
   text-transform: uppercase;
   color: white;
   font-size: 16px;
@@ -2149,7 +2173,7 @@ ul.arrow li a:hover {
 .main-content .container {
   background: white;
   border-radius: 5px;
-  padding: 30px;
+  padding: 45px 80px 150px 80px;
 }
 
 .section-title {
@@ -2160,7 +2184,6 @@ ul.arrow li a:hover {
 
 .movie-schedule {
   list-style: none;
-  text-align: left;
 }
 .movie-schedule li {
   padding: 10px 0;
@@ -2205,6 +2228,10 @@ ul.arrow li a:hover {
   font-size: 26px;
   font-size: 1.7333333333em;
   font-weight: 300;
+}
+
+.page {
+  text-align: center;
 }
 
 .page figure {
@@ -2338,10 +2365,11 @@ ul.arrow li a:hover {
 }
 
 /*
- * Footer Styles
- */
+  * Footer Styles
+  */
 .site-footer {
-  padding: 50px 0;
+  padding-top: 20px;
+  margin-bottom: 0px;
 }
 .site-footer .widget {
   margin-bottom: 30px;

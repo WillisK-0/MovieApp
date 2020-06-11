@@ -8,7 +8,7 @@
 //     div = document.getElementById('tow');
 //     div.style.display = "block";
 // }
-function showDiv() {
-  div = document.getElementById("resultDiv");
-  div.style.display = "block";
-}
+// function showDiv() {
+//   div = document.getElementById("resultDiv");
+//   div.style.display = "block";
+// }

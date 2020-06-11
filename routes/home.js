@@ -20,7 +20,7 @@ function getMovie(movie) {
     });
 }
 
-getMovie("happy gilmore");
+getMovie("hot rod");
 getMovie("django");
 getMovie("school of rock");
 
@@ -75,7 +75,11 @@ router.post("/search", (req, res) => {
   fetch(`http://www.omdbapi.com/?t=${movieReq}&apikey=b9cd1e82`)
     .then((r) => r.json())
     .then((movie) => {
-      res.render("search", { movie });
+      if (movie.Response == "True") {
+        res.render("movieSearch", { movie });
+      } else {
+        res.render("movieSearchError");
+      }
     });
 });
 

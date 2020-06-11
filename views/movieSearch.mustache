@@ -1,0 +1,80 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Movie-Wiki | Result</title>
+
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/movieSearch.css">
+		
+	</head>
+
+<body>
+		<div id="site-content">
+			 <header class="site-header">
+        <div class="container">
+			<div id="movieMenu">
+				<a href="/" id="branding">
+				<img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-1/p320x320/17425117_692024894313530_8635769697516586971_n.png?_nc_cat=105&_nc_sid=1eb0c7&_nc_ohc=vs7_c9jGHDQAX8alsoP&_nc_ht=scontent-dfw5-1.xx&oh=99ff6b0ae25df8a5c1b2678de7c83ad3&oe=5F064ABE" alt="" class="logo" id="logoImg"/>
+				<div class="logo-copy">
+				<h1 class="site-title">Movie-Wiki</h1>
+				<small class="site-description">The Free Movie Database</small>
+            </div>
+          </a>
+			</div>
+          <div class="main-navigation">
+            <button type="button" class="menu-toggle">
+              <i class="fa fa-bars" ></i>
+            </button>
+            <ul class="menu">
+              <li class="menu-item current-menu-item">
+                <a href="/">Home</a>
+              </li>
+              <li class="menu-item"><a href="/search">Search</a></li>
+              
+            </ul>
+          </div>
+          <div class="mobile-navigation"></div>
+        </div>
+      </header>
+			<main class="main-content">
+				<div class="container">
+					<div class="page">
+						<div class="breadcrumbs">
+							<a href="/search"><h3 id="x">Find Another Movie</h3></a>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<figure><img src={{movie.Poster}} alt="figure image"></figure>
+							</div>
+							<div class="col-md-8">
+								<p class="leading">{{movie.Title}}</p>
+								<div id="plotDiv">
+								<p class="leading" >Plot:</p>
+								<p id="plotDes" >{{movie.Plot}}</p>
+								</div>
+                                <p><b>Actors:</b> {{movie.Actors}}</p>
+
+                                <ul class="movie-details-list">
+                                <li><b>Release Date:</b> {{movie.Released}}</li>
+                                <li><b>Genre:</b> {{movie.Genre}}</li>
+                                <li><b>Director:</b> {{movie.Director}}</li>
+                                <li><b>Writers:</b>  {{movie.Writer}}</li>
+                                </ul>
+							</div>
+						</div>			
+			</main>
+			<footer class="site-footer">		
+			</footer>
+			
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>
