@@ -2,7 +2,7 @@
 
 This application was created to show my abilities of implementing a REST API (Ombd API) using a Node.js framework. Other technologies include Express, Mustache pages.
 
-With this app the user can search for their favorite movies and bring up the movie plot, actors, release date, genre, director(s), and wrtier(s). On the apps homepage the user will find Music-Wikis top movie picks.
+With this app the user can search for their favorite movies and bring up the movie plot, actors, release date, genre, director(s), and writer(s). On the apps homepage the user will find Music-Wikis top movie picks.
 
 
 # Live Link
