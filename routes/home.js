@@ -27,7 +27,7 @@ getMovie("school of rock");
 getMoviePoster("step brothers");
 getMoviePoster("get out");
 getMoviePoster("guardians of the galaxy");
-getMoviePoster("ted");
+getMoviePoster("avatar");
 getMoviePoster("inception");
 getMoviePoster("Iron Man");
 getMoviePoster("freedom writers");
