@@ -17,6 +17,6 @@ app.set("views");
 app.set("view engine", "mustache");
 app.use("/", homeRouter);
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("Server is running...");
 });
