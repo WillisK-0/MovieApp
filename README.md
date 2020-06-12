@@ -1,13 +1,13 @@
 # Movie-Wiki
 
-This application was created to show my abilities of implementing a REST API (Ombd API) using a Node.js framework. Other technologies include Express, Mustache pages.
+This application was created to show the implementation of a REST API (Ombd API) and using a Node.js framework. Other technologies include Express, and Mustache pages. This app was deployed using Heroku. 
 
-With this app the user can search for their favorite movies and bring up the movie plot, actors, release date, genre, director(s), and writer(s). On the apps homepage the user will find Music-Wikis top movie picks.
+With this app the user can search for their favorite movies and bring up the movie plot, actors, release date, genre, director(s), and writer(s). On the homepage the user will find Music-Wikis top movie picks.
 
 
 # Live Link
 
-(insert Link)
+https://dry-cove-02508.herokuapp.com/
 
 # Site Preview
 
