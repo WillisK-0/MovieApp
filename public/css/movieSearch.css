@@ -1709,6 +1709,10 @@ ul.arrow li a:hover {
     display: flex;
     flex-direction: column;
   }
+
+  #plotdes {
+    text-align: left;
+  }
   .col-md-4 > p {
     text-align: center;
   }

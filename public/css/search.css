@@ -740,12 +740,13 @@ ul.arrow li a:hover {
   height: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 993px) {
   .movie-search-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   main-content .container {
     background: white;
     border-radius: 5px;
@@ -1792,6 +1793,18 @@ ul.arrow li a:hover {
 @media (max-width: 767px) {
   .visible-xs-inline-block {
     display: inline-block !important;
+  }
+}
+
+@media (max-width: 403px) {
+  .search-form > h1 {
+    font-size: 33px;
+  }
+  .search-form-div {
+    align-items: center;
+  }
+  input {
+    margin-left: -34px;
   }
 }
 
